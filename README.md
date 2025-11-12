@@ -16,13 +16,19 @@
 ### Шаг 1: Откройте Claude Code
 
 Убедитесь, что у вас установлен [Claude Code](https://claude.com/product/claude-code)
+
 Скачайте все файлы репозитория
+
 Откройте Терминал
+
 Перейдите в папку, где лежат файлы этого проекта:
+
 ```bash
 cd "/путь до папки/custdev interviewer scripted"
 ```
+
 Откройте проект в Claude Code:
+
 ```bash
 claude
 ```
