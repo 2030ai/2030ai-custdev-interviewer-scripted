@@ -3,7 +3,6 @@
 
 import sys
 from pathlib import Path
-from datetime import datetime
 
 
 class SimpleCustDevOrchestrator:
@@ -52,40 +51,40 @@ class SimpleCustDevOrchestrator:
             },
             2: {
                 "name": "Question Generator",
-                "prompt_file": "3 questions.md",
-                "output_file": "3-questions.md",
+                "prompt_file": "2 questions.md",
+                "output_file": "2-questions.md",
                 "description": "Генерация вопросов для интервью",
                 "input_context": "Используй описание аудитории из файла 1-startup-mix.md"
             },
             3: {
                 "name": "Persona Creator",
-                "prompt_file": "4 person.md",
-                "output_file": "4-person-{:02d}.md",
+                "prompt_file": "3 person.md",
+                "output_file": "3-person-{:02d}.md",
                 "description": "Создание персон (10 штук)",
                 "input_context": "Используй описание аудитории из файла 1-startup-mix.md",
                 "count": 10
             },
             4: {
                 "name": "Interview Simulator",
-                "prompt_file": "5 script.md",
-                "output_file": "5-script-{:02d}.md",
+                "prompt_file": "4 script.md",
+                "output_file": "4-script-{:02d}.md",
                 "description": "Симуляция интервью (10 штук)",
-                "input_context": "Используй персоны из 4-person-*.md и вопросы из 3-questions.md",
+                "input_context": "Используй персоны из 3-person-*.md и вопросы из 2-questions.md",
                 "count": 10
             },
             5: {
                 "name": "Interview Analyzer",
-                "prompt_file": "6 analyse.md",
-                "output_file": "6-analyse.md",
+                "prompt_file": "5 analyse.md",
+                "output_file": "5-analyse.md",
                 "description": "Анализ всех интервью",
-                "input_context": "Проанализируй все интервью из файлов 5-script-*.md"
+                "input_context": "Проанализируй все интервью из файлов 4-script-*.md"
             },
             6: {
                 "name": "Reels Scriptwriter",
-                "prompt_file": "7 reels.md",
-                "output_file": "7-reels.md",
+                "prompt_file": "6 reels.md",
+                "output_file": "6-reels.md",
                 "description": "Создание сценариев для видео",
-                "input_context": "Используй 1-startup-mix.md и 6-analyse.md"
+                "input_context": "Используй 1-startup-mix.md и 5-analyse.md"
             }
         }
         return steps.get(step, {})
