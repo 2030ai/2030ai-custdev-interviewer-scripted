@@ -256,7 +256,7 @@
 
 ```
 custdev-interviewer/
-├── agents.md                      # Этот файл (инструкция для AI)
+├── AGENTS.md                      # Этот файл (инструкция для AI)
 ├── README.md                      # Инструкция для пользователя
 ├── prompts/                       # Промпты для генерации
 │   ├── 1 startup mix.md
